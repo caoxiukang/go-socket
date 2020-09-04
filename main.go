@@ -140,7 +140,7 @@ func main() {
 	//go updateSessionToDb()
 
 	runtime.Info.Println("websocket start at 127.0.0.1:3001")
-	err := http.ListenAndServe("127.0.0.1:3000", nil)
+	err := http.ListenAndServe(":3000", nil)
 	if err != nil {
 		panic("ListenAndServe: " + err.Error())
 	}
